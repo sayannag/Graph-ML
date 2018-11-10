@@ -1,0 +1,5 @@
+<div id="slate" (mousedown)="mouseDown($event)" (mousemove)="mouseMove($event)" (mouseup)="mouseUp($event)" (window:mouseup)="mouseUp($event)" (mousewheel)="onScroll($event)">
+    <!--<app-box [slate]="this" (onDrag)="registerBox($event)"></app-box>-->
+    <!--<app-box cx="30" cy="30" [slate]="this" (onDrag)="registerBox($event)"></app-box>-->
+    <app-box *ngFor="let box of boxSet" [cx]="box.cx" [cy]="box.cy" [slate]="this" (onDrag)="registerBox($event)" (onTap)="onTap($event)"></app-box>
+</div>

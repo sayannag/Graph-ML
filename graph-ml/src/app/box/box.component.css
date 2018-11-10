@@ -1,0 +1,66 @@
+.box{
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(-45deg, #e76f35, #FF5349);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    opacity: 0.97;
+    cursor: default;
+    transform-origin: 0 0;
+}
+
+.box-heading-holder{
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border-spacing: 0;
+    cursor: all-scroll;
+}
+
+.box-heading{
+    background: linear-gradient(-45deg, #1e2644,#292C44);
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #ffffff;
+}
+
+.box-io-holder{
+    min-width: 150px;
+    color: #F0F0F1;
+    padding-top: 10px;
+
+}
+
+.box-io-gap{
+    height: 100%;
+    width: 20px;
+}
+
+.box-io-holder>div>div{
+    height:30px;
+}
+
+.box-input{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.box-output-holder{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.box-output{
+    text-align: right;
+}
+
+.box-heading-content{
+    margin: 0;
+}
+
+.on-top{
+    z-index: 100;
+}
+

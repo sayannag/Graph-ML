@@ -1,0 +1,30 @@
+<div class="box" [class.on-top]="onTop" [style.left]="(posX*slate.zoom+dx +slate.panX + slate.panDx)+'px'" [style.top]="(posY*slate.zoom+dy+slate.panY + slate.panDy)+'px'" [style.transform]="'scale('+slate.zoom+')'">
+    <table class="box-heading-holder" (mousedown)="mouseDown($event)" (mousemove)="mouseMove($event)" (mouseup)="mouseUp($event)" (window:mouseup)="mouseUp($event)">
+        <div class="box-heading">
+            <p class="box-heading-content">Heading</p>
+        </div>
+    </table>
+    <div class="box-body">
+        <table>
+            <tr>
+                <td class="box-io-holder box-input-holder">
+                    <div class="box-inputs">
+                        <div class="box-input">Input 1</div>
+                        <div class="box-input">Input 2</div>
+                        <div class="box-input">Input 3</div>
+                        <div class="box-input">Input 4</div>
+                    </div>
+                </td>
+                <td class="box-io-gap"></td>
+                <td class="box-io-holder box-output-holder">
+                    <div class="box-outputs">
+                        <div class="box-output">Output 1</div>
+                        <div class="box-output">Output 2</div>
+                        <div class="box-output">Output 3</div>
+                        <div class="box-output">4</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
